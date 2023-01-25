@@ -5,6 +5,7 @@
     <title>Homework 3: Accessibility Testing on Kenton United Methodist Church</title>
 </head>
 
+<body>
     <h1>Accessibility Testing on Kenton United Methodist Church</h1>
         <p>
         Name:Leanna Carroll
@@ -25,10 +26,80 @@
     </div>
     <div>
         <h2>Website Page Title</h2>
-            <p>When a screen reader reads a web page, the first thing it will read is the page title. These titles are important for easy navigation between tabs in their browser.</p>
-            <p><strong>Results:</strong>Each page of this site begins with a clear HTML title.</p>
+            <p>
+            When a screen reader reads a web page, the first thing it will read is the page title. These titles are important for easy navigation between tabs in their browser.
+            <br>
+            <strong>Results:</strong>Each page of this site begins with a clear HTML title.
+            </p>
     </div>
     <div>
-        <h2>Image Te</h2>
+        <h2>Image Text Alternatives</h2>
+            <p>
+                Alternative text is a term that can be found more and more in popular media, and is not only applicable by web developers, but also by everyday users of social media outlets such as Instagram, where users have the option of adding alternative or "alt" text to their personal posts. Even so, alt text is still one of the most common details left out of website code.
+            <br>
+            <strong>Results:</strong>On your website, there are few images that contain alternative text, there are at least 10 that do not. Some (6) include the necessary code formatting (alt="") but are simply left blank.
+            <br>
+            <strong>How to Fix This?:</strong>Luckily, alt text is as easy as adding a quick description of an image. Anything helps, but being descriptive is ideal!
+            </p>
+    </div>
+    <div>
+        <h2>Interaction</h2>
+            <p>
+                For those who cannot use a mouse to navigate a website, it is imperative that the website can be navigated using the keyboard.
+                <br>
+                <strong>Results:</strong>The site can be navigated completely with a keyboard, including the form in the "Contact" page.
+            </p>
+    </div>
+    <div>
+        <h2>Headings</h2>
+            <p>
+                Though many of us may see heading types as simply cosmetic changes to a website, they serve an additional function to people who use screen readers. For this person, headings in a website's code act as an organizational menu that helps them to navigate the site. There should be only one Heading 1 per page. The reason your webpage should only have one h1 is that it signifies a new page for screen readers. As long as there are no more h1s, the screen reader and the user know they are on the same webpage they started on. If there are more, the navigation can become confusing and more difficult for the user.
+                <br>
+                <strong>Results:</strong>The good news about your site is this: where you have headings, they are clearly formatted in an understandable way, and the pages that have a Heading 1 (h1), have only one. Your main page has one h1, which is great! However, other pages, such as your "Sermons" page, does not have any h1 at all, and rather begins with h2. Therefore, a user with a screen reader will not be aware that they have entered a new page.
+                <br>
+                <strong>How to Fix This?:</strong>Quite simply, as I'm sure you've guessed, the way to fix this issue is to be sure that all pages begin with an h1, and contain only one of them. In addition, be sure that each section of your website begins with a heading element and that they are organized in a way that makes sense.
+                <br>
+                For example:
+                <ul>
+                    <li>Good: h1, h2, h3, h2, h3, h4</li>
+                    <li>Bad: h1, h3, h4, h2</li>
+                </ul>
+            </p>
+    </div>
+    <div>
+        <h2>Colors</h2>
+            <p>
+                Contrast colors are easy to miss. Often we might choose colors that we think are pleasing to the eye for websites. However, if the colors of text and background are not contrasted enough, it can be difficult for people with low visibility to read the text.
+                <br>
+                <strong>Results:</strong>Now, for part of this evaluation, I used a tool called the Web Accessibility Evaluation Tool or WAVE, which is widely used for this purpose. The tool flagged color contrast errors in the footers of your webpages between the text and the background. I notice on other sections of the site, the dark blue background you use has a gradient to it and gets lighter toward the bottom. My best guess is that the tool noticed the gradient and flagged a possible issue here because of it. Because the white text is not within that lighter gradient and exists in the darkest part of the blue background, I am not sure this would actually hinder text visibility.
+                <br>
+                <strong>How to Fix This?:</strong>To be safe, I would recommend increasing the contrast of colors (Make sure the white text is pure white and darken the blue background).
+            </p>
+    </div>
+    <div>
+        <h2>Moving Content, Multimedia</h2>
+            <p>
+                Moving, flashing, or blinking content can be a problem for users with visual disabilities as well as those who are prone to epileptic seizures. In addition, multimedia such as video can cause problems such as lack of proper captioning and poor navigation using only the keyboard.
+                <br>
+                <strong>Results:</strong>There were no examples of this type of media that could cause issue. If you add any of this media to your site in the future, I recommend keeping these details in mind.
+            </p>
+    </div>
+    <div>
+        <h2>Conclusion</h2>
+            <p>
+                As mentioned before, your site is well on its way to meeting the WAI guidelines. Thank you for taking the time to review my findings, and I hope you take them into consideration going forward.
+            </p>
+            <p>
+                Wishing you all the best,
+            </p>
+            <p>
+                <strong>Leanna Carroll</strong>
+                <br>
+                leanna.carroll@du.edu
+                <br>
+                University of Denver
+            </p>
+    </div>
 
+</body>    
 </html>
