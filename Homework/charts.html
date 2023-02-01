@@ -8,7 +8,7 @@
 <div class="container">
 <script>
 var xValues = ["2019", "2020", "2021", "2022"];
-var yValues = [5.01, 5.3, 7.3, 8.061];
+var yValues = [5.1, 5.3, 7.3, 8.061];
 var barColors = ["green", "green","green","green"];
 
 new Chart("myChart", {
@@ -29,38 +29,6 @@ new Chart("myChart", {
   }
 });
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-</div>
-</p>
-<p>
-    <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
-
-<div class="container">
-<script>
-var xValues = ["2019", "2020", "2021", "2022"];
-var yValues = [5.01, 5.3, 7.3, 8.061];
-var barColors = ["green", "green","green","green"];
-
-new Chart("myChart", {
-  type: "bar",
-  data: {
-    labels: xValues,
-    datasets: [{
-      backgroundColor: barColors,
-      data: yValues
-    }]
-  },
-  options: {
-    legend: {display: false},
-    title: {
-      display: true,
-      text: "Trees Planted by the National Forest Foundation (millions)"
-    }
-  }
-});
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-</div>
 </p>
 </body>
 </html
