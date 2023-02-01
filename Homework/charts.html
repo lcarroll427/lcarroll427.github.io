@@ -2,16 +2,14 @@
 <html>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 <body>
-<p>
-    <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+    <canvas id="NFF" style="width:100%;max-width:600px"></canvas>
 
-<div class="container">
 <script>
 var xValues = ["2019", "2020", "2021", "2022"];
 var yValues = [5.1, 5.3, 7.3, 8.061];
 var barColors = ["green", "green","green","green"];
 
-new Chart("myChart", {
+new Chart("NFF", {
   type: "bar",
   data: {
     labels: xValues,
@@ -29,6 +27,33 @@ new Chart("myChart", {
   }
 });
 </script>
+<br>
+<br>
+<canvas id="IntlTree" style="width:100%;max-width:600px"></canvas>
+<script>
+  var xValues = ["China", "India", "Ethiopia", "Pakistan", "Mexico", "United States"];
+  var yValues = [2407.1, 2159.4, 1725.3, 1006.7, 789.3, 315.5];
+  var barColors = ["darkseagreen", "green", "darkgreen", "darkblue", "indigo", "darkviolet"];
+  
+
+  new Chart("IntlTree", {
+    type: "horizontalBar",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+      }]
+    },
+    options: {
+      legend: {display: false},
+      title: {
+        display: true,
+        text: "Estimated Trees Planted Per Year (millions)"
+      }
+    }
+  });
+  </script>
 </p>
 </body>
 </html
